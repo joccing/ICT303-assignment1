@@ -3,7 +3,7 @@ import errno
 import requests
 
 FOLDERS = {
-    'housing-prices': ['data']
+    'housing-prices': ['data','data','data','data']
 }
 FILENAMES = {
     'housing-prices': ['train.csv','test.csv','data_description.txt','sample_submission.csv']
