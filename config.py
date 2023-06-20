@@ -2,10 +2,10 @@ import os
 import errno
 
 FOLDERS = {
-    'housing-prices': ['data'],
+    'housing-prices': ['data']
 }
 FILENAMES = {
-    'housing-prices': ['train.csv','test.csv','data_description.txt','sample_submission.csv'],
+    'housing-prices': ['train.csv','test.csv','data_description.txt','sample_submission.csv']
 }
     
 try:
@@ -15,7 +15,7 @@ except ModuleNotFoundError:
     IS_COLAB = False
 
 def download_to_colab(folderName, branch='master'):
-    base_url = 'https://github.com/joccing/ICT303-assignment1/{}/'.format(branch)
+    base_url = 'https://raw.githubusercontent.com/joccing/ICT303-assignment1/{}/'.format(branch)
 
     folders = FOLDERS[folderName]
     filenames = FILENAMES[folderName]
