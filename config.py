@@ -1,5 +1,6 @@
 import os
 import errno
+import requests
 
 FOLDERS = {
     'housing-prices': ['data']
