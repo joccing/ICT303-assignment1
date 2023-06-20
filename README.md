@@ -18,3 +18,11 @@ except ModuleNotFoundError:
 from config import *
 config_data()
 ```
+
+After doing this, in another cell, copy and paste the following:
+
+```python
+import pandas as pd
+train_data = pd.read_csv('data/train.csv')
+test_data  = pd.read_csv('data/test.csv')
+```
