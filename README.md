@@ -1,7 +1,7 @@
-# deeplearning-assignment1
+# ICT303 Assignment1
 Hi Students of ICT303!
 
-This code allows you to download the training and test data for assignment1 into a folder on your google colab.
+This code allows you to download the training and test data for **Assignment 1** into a folder on your google colab.
 
 Simply create a cell at the beginning of your colab notebook, and copy and paste this code there:
 
