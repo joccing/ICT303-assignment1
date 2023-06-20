@@ -9,7 +9,7 @@ Simply create a cell at the beginning of your colab notebook, and copy and paste
 try:
     import google.colab
     import requests
-    url = 'https://raw.githubusercontent.com/joccing/ICT303-assignment1/config.py'
+    url = 'https://raw.githubusercontent.com/joccing/ICT303-assignment1/master/config.py'
     r = requests.get(url, allow_redirects=True)
     open('config.py', 'wb').write(r.content)    
 except ModuleNotFoundError:
