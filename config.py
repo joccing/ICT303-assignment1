@@ -15,7 +15,7 @@ except ModuleNotFoundError:
     IS_COLAB = False
 
 def download_to_colab(folderName, branch='master'):
-    base_url = 'https://joccing/ICT303-assignment1/{}/'.format(branch)
+    base_url = 'https://github.com/joccing/ICT303-assignment1/{}/'.format(branch)
 
     folders = FOLDERS[folderName]
     filenames = FILENAMES[folderName]
