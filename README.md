@@ -23,27 +23,11 @@ def is_running_in_colab():
     except ImportError:
         return False
 
-def is_running_in_jupyter():
-    try:
-        shell = get_ipython().__class__.__name__
-        if shell == 'ZMQInteractiveShell':
-            return True
-        else:
-            return False
-    except NameError:
-        return False
-
-def is_running_in_vscode():
-    return 'VSCODE_PID' in os.environ
-
 try:
   if is_running_in_colab():
     print("Running in Google Colab")
-  elif is_running_in_jupyter():
-    if is_running_in_vscode():
-      print("Running in Jupyter Notebook within VSCode")
-    else:
-      print("Running in Jupyter Notebook (not in VSCode)")
+  else:
+    print("Running in Jupyter or VSCode")
 
   import requests
   url = 'https://raw.githubusercontent.com/joccing/ICT303-assignment1/master/config.py'
