@@ -58,3 +58,5 @@ assert train_data.shape == (1460,81)
 assert test_data.shape == (1459, 80)
 print('Loaded and verified data!')
 ```
+
+and execute it using Shift-Return as well.
