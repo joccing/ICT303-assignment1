@@ -8,14 +8,14 @@ FOLDERS = {
 FILENAMES = {
     'housing-prices': ['train.csv','test.csv','data_description.txt','sample_submission.csv']
 }
-    
-try:
-    import google.colab
-    IS_COLAB = True
-except ModuleNotFoundError:
-    IS_COLAB = False
 
-def download_to_colab(folderName, branch='master'):
+# try:
+#     import google.colab
+#     IS_COLAB = True
+# except ModuleNotFoundError:
+#     IS_COLAB = False
+
+def download(folderName, branch='master'):
     base_url = 'https://raw.githubusercontent.com/joccing/ICT303-assignment1/{}/'.format(branch)
 
     folders = FOLDERS[folderName]
@@ -35,7 +35,6 @@ def download_to_colab(folderName, branch='master'):
             open(path, 'wb').write(r.content)
     
 def config_data(branch='master'):
-    if IS_COLAB:
-        print('Downloading files from GitHub repo to Colab...')
-        download_to_colab('housing-prices', branch)
+        print('Downloading files from GitHub repo ...')
+        download('housing-prices', branch)
         print('Finished!')
