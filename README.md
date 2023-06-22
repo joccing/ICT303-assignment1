@@ -1,9 +1,9 @@
 # ICT303 Assignment1
 Hi Students of ICT303!
 
-This code allows you to download the training and test data for **Assignment 1** into a folder on your google colab.
+This code allows you to download the training and test data for **Assignment 1** into a folder on your local directory.
 
-Simply create a cell at the beginning of your notebook (Colab/Jupyter/VSCode), and copy and paste this code there:
+Simply create a cell at the beginning of your **Colab or Jupyter or VSCode** notebook, and copy and paste this code there:
 
 ```python
 import os
